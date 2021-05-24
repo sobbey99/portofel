@@ -1,0 +1,53 @@
+aside {
+    position: fixed;
+    top: 350px;
+    left: -130px;
+    z-index: 300;
+    color: $main-color;
+    height: 25px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: rotate(-90deg);
+    p {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    div.line {
+        width: 70px;
+        height: 2px;
+        background-color: $main-color;
+        animation: sideBarLine 1300ms linear 400ms 1 normal;
+        animation-fill-mode: forwards;
+    }
+    a img {
+        transform: rotate(90deg);
+    }
+    a {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        transition: 300ms all linear;
+        
+        &:hover {
+            transition: 300ms all linear;
+            transform: scale(1.1) translateX(3px);
+        }
+    }
+    .sociallink {
+        &_1 {
+            animation: opacities 1000ms ease 1700ms 1 normal;
+            animation-fill-mode: forwards;
+        }
+        &_2 {
+            animation: opacities 1000ms ease 2400ms 1 normal;
+            animation-fill-mode: forwards;
+        }
+        &_3 {
+            animation: opacities 1000ms ease 3000ms 1 normal;
+            animation-fill-mode: forwards;
+        }
+    }
+ 
+}

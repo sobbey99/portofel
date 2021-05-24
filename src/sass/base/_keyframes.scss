@@ -1,0 +1,51 @@
+@keyframes sideBarLine {
+    from { 
+        width: 0;
+    }
+    to {
+        width: 70px;
+    }
+}
+
+@keyframes opacities {
+    from {
+        opacity: 0;
+    }
+    to {
+      opacity: 1;  
+    }
+}
+
+@keyframes scaleIt {
+    from {
+        transform: scale(0);
+        background-color: black;
+    }
+
+    33% {
+        background-color: purple;
+    }
+
+    45% {
+         
+            background-color: yellow;
+        
+    }
+
+    50% {
+         
+        background-color: pink;
+    
+}
+
+
+80% {
+         
+    background-color: blue;
+
+}
+    to {
+        transform: scale(1);
+        background-color: rgb(221, 221, 221);
+    }
+}
